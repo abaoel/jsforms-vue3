@@ -1,6 +1,9 @@
 # Instruction on how to use
+
 Step 1: Clone this REPO
-STep 2: Run NPM INSTALL
+
+Step 2: Run NPM INSTALL
+
 Step 3: Run NPM RUN DEV
 
 # Vue 3 + TypeScript + Vite
