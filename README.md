@@ -1,4 +1,4 @@
-# Instruction on how to use
+# Instructions on how to use
 
 Step 1: Clone this REPO
 
