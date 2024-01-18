@@ -1,0 +1,61 @@
+{
+    "type": "HorizontalLayout",
+    "elements": [
+      {
+        "type": "VerticalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/firstname",
+            "label": "First Name"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/lastname",
+            "label": "Last Name"
+          },
+          
+          {
+            "type": "Control",
+            "scope": "#/properties/isshow",
+            "rule": {
+              "effect": "HIDE",
+              "condition": {}
+            }
+          }
+        ]
+      },
+      {
+        "type": "VerticalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/birthday",
+            "label": "Birth Day"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/email",
+            "label": "Email",
+            "rule": {
+              "effect": "HIDE",
+              "condition": {
+                "scope": "#/properties/isshow",
+                "schema": {
+                  "const": false
+                }
+              }
+            }
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/age",
+            "rule": {
+              "effect": "HIDE",
+              "condition": {}
+            }
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,42 @@
+{
+  "properties": {
+    "firstname": {
+      "type": "string",
+      
+      "description": "Your first name"
+    },
+    "lastname": {
+      "type": "string",
+     
+      "description": "Your last name"
+    },
+    "isshow": {
+      "type": "boolean"
+    },
+    "birthday": {
+      "type": "string",
+      "format": "date",
+      "description": "Your birth date"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "email": {
+      "title": "Email address",
+      "type": "string",
+      "pattern": "^\\S+@\\S+\\.\\S+$",
+      "format": "email",
+      "minLength": 6,
+      "maxLength": 127,
+      "rule": {
+        "effect": "HIDE",
+        "condition": {
+          "scope": "#/properties/age",
+          "schema": {
+            "const": 0
+          }
+        }
+      }
+    }
+  }
+}
